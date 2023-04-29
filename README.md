@@ -1,2 +1,2 @@
 # NamelessMMORPG
-Namelessis a Turn-Based MMORPG with Unity.
+Nameless is a Turn-Based MMORPG with Unity.
