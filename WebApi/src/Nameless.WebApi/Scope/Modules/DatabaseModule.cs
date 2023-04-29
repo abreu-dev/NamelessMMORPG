@@ -1,7 +1,10 @@
 ﻿using Autofac;
+using Nameless.Core.Infra.Data.Contexts;
 using Nameless.Infra.DbContext.Contexts;
 using Nameless.Infra.DbContext.Factory;
 using Nameless.Infra.Providers.InMemory;
+using Nameless.Security.Domain.Repositories;
+using Nameless.Security.Repository.Repositories;
 
 namespace Nameless.WebApi.Scope.Modules
 {
@@ -17,6 +20,7 @@ namespace Nameless.WebApi.Scope.Modules
         protected override void Load(ContainerBuilder builder)
         {
             AddDatabases(builder);
+            AddRepositories(builder);
         }
 
         private void AddDatabases(ContainerBuilder builder)
@@ -26,9 +30,15 @@ namespace Nameless.WebApi.Scope.Modules
 
             builder.RegisterType<NamelessContext>()
                 .WithParameter("Options", options)
+                .As<INamelessContext>()
                 .InstancePerLifetimeScope();
 
             builder.RegisterInstance(options).SingleInstance();
+        }
+
+        private void AddRepositories(ContainerBuilder builder)
+        {
+            builder.RegisterType<AccountRepository>().As<IAccountRepository>().SingleInstance();
         }
     }
 }

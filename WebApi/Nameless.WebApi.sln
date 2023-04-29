@@ -7,25 +7,37 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{4B675C59-122
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{27671FCE-B221-4310-A123-C06C60F494A0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nameless.Infra.DbEntities", "src\Nameless.Infra.DbEntities\Nameless.Infra.DbEntities.csproj", "{4C5E8BB4-5F47-42C3-B117-60F8440881C0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nameless.Infra.DbEntities", "src\Nameless.Infra.DbEntities\Nameless.Infra.DbEntities.csproj", "{4C5E8BB4-5F47-42C3-B117-60F8440881C0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nameless.Infra.Resources", "src\Nameless.Infra.Resources\Nameless.Infra.Resources.csproj", "{C2592B8B-E0FC-4FB0-9D28-97A3C0D6E050}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nameless.Infra.Resources", "src\Nameless.Infra.Resources\Nameless.Infra.Resources.csproj", "{C2592B8B-E0FC-4FB0-9D28-97A3C0D6E050}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nameless.Infra.DbContext", "src\Nameless.Infra.DbContext\Nameless.Infra.DbContext.csproj", "{F79F8355-4111-4F3A-95B7-1767C57011A9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nameless.Infra.DbContext", "src\Nameless.Infra.DbContext\Nameless.Infra.DbContext.csproj", "{F79F8355-4111-4F3A-95B7-1767C57011A9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nameless.Infra.DbMigrations", "src\Nameless.Infra.DbMigrations\Nameless.Infra.DbMigrations.csproj", "{E4B94F76-043D-461F-BC9E-EA6160FFB2E2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nameless.Infra.DbMigrations", "src\Nameless.Infra.DbMigrations\Nameless.Infra.DbMigrations.csproj", "{E4B94F76-043D-461F-BC9E-EA6160FFB2E2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nameless.Core.Infra.Data", "src\Nameless.Core.Infra.Data\Nameless.Core.Infra.Data.csproj", "{1032C3AC-221E-41E6-AF2E-9DFA2557EF2D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nameless.Core.Infra.Data", "src\Nameless.Core.Infra.Data\Nameless.Core.Infra.Data.csproj", "{1032C3AC-221E-41E6-AF2E-9DFA2557EF2D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nameless.WebApi", "src\Nameless.WebApi\Nameless.WebApi.csproj", "{370C179F-F1EA-4DEB-A6D9-F0C48390466D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nameless.WebApi", "src\Nameless.WebApi\Nameless.WebApi.csproj", "{370C179F-F1EA-4DEB-A6D9-F0C48390466D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nameless.Infra.Providers", "src\Nameless.Infra.Providers\Nameless.Infra.Providers.csproj", "{391745B9-15EA-469F-BBD6-2E1BB4948960}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nameless.Infra.Providers", "src\Nameless.Infra.Providers\Nameless.Infra.Providers.csproj", "{391745B9-15EA-469F-BBD6-2E1BB4948960}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{0A3616E3-DB0B-4AC6-828C-8D4A9786ED37}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{DCA288B3-486E-41BF-AE41-179D5AF2220E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebApi", "WebApi", "{B2D5AD3E-5379-43A4-B5EC-225607A823AB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{BD526229-28A4-4C03-95A0-6104F4446F3D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nameless.Security.Domain", "src\Nameless.Security.Domain\Nameless.Security.Domain.csproj", "{996826AC-7641-481C-A706-F7139E6E48E6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nameless.Security.Application", "src\Nameless.Security.Application\Nameless.Security.Application.csproj", "{7451C1F3-802A-46E1-B0AE-0A8D8ECBB7B7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nameless.Security.Repository", "src\Nameless.Security.Repository\Nameless.Security.Repository.csproj", "{74A7C01F-CEDA-4EF5-964B-130E8B82354A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nameless.Security.Contracts", "src\Nameless.Security.Contracts\Nameless.Security.Contracts.csproj", "{5F0AE13D-A27C-4DFF-9A3C-8A711A68628F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nameless.Core.Domain", "src\Nameless.Core.Domain\Nameless.Core.Domain.csproj", "{A535B9DB-33FC-4FFC-A177-C2AD40400C61}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -61,6 +73,26 @@ Global
 		{391745B9-15EA-469F-BBD6-2E1BB4948960}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{391745B9-15EA-469F-BBD6-2E1BB4948960}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{391745B9-15EA-469F-BBD6-2E1BB4948960}.Release|Any CPU.Build.0 = Release|Any CPU
+		{996826AC-7641-481C-A706-F7139E6E48E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{996826AC-7641-481C-A706-F7139E6E48E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{996826AC-7641-481C-A706-F7139E6E48E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{996826AC-7641-481C-A706-F7139E6E48E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7451C1F3-802A-46E1-B0AE-0A8D8ECBB7B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7451C1F3-802A-46E1-B0AE-0A8D8ECBB7B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7451C1F3-802A-46E1-B0AE-0A8D8ECBB7B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7451C1F3-802A-46E1-B0AE-0A8D8ECBB7B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74A7C01F-CEDA-4EF5-964B-130E8B82354A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74A7C01F-CEDA-4EF5-964B-130E8B82354A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74A7C01F-CEDA-4EF5-964B-130E8B82354A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74A7C01F-CEDA-4EF5-964B-130E8B82354A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F0AE13D-A27C-4DFF-9A3C-8A711A68628F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F0AE13D-A27C-4DFF-9A3C-8A711A68628F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F0AE13D-A27C-4DFF-9A3C-8A711A68628F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F0AE13D-A27C-4DFF-9A3C-8A711A68628F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A535B9DB-33FC-4FFC-A177-C2AD40400C61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A535B9DB-33FC-4FFC-A177-C2AD40400C61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A535B9DB-33FC-4FFC-A177-C2AD40400C61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A535B9DB-33FC-4FFC-A177-C2AD40400C61}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -76,6 +108,12 @@ Global
 		{0A3616E3-DB0B-4AC6-828C-8D4A9786ED37} = {4B675C59-122E-47B4-9B77-6AB84E1CA3EE}
 		{DCA288B3-486E-41BF-AE41-179D5AF2220E} = {4B675C59-122E-47B4-9B77-6AB84E1CA3EE}
 		{B2D5AD3E-5379-43A4-B5EC-225607A823AB} = {4B675C59-122E-47B4-9B77-6AB84E1CA3EE}
+		{BD526229-28A4-4C03-95A0-6104F4446F3D} = {4B675C59-122E-47B4-9B77-6AB84E1CA3EE}
+		{996826AC-7641-481C-A706-F7139E6E48E6} = {BD526229-28A4-4C03-95A0-6104F4446F3D}
+		{7451C1F3-802A-46E1-B0AE-0A8D8ECBB7B7} = {BD526229-28A4-4C03-95A0-6104F4446F3D}
+		{74A7C01F-CEDA-4EF5-964B-130E8B82354A} = {BD526229-28A4-4C03-95A0-6104F4446F3D}
+		{5F0AE13D-A27C-4DFF-9A3C-8A711A68628F} = {BD526229-28A4-4C03-95A0-6104F4446F3D}
+		{A535B9DB-33FC-4FFC-A177-C2AD40400C61} = {0A3616E3-DB0B-4AC6-828C-8D4A9786ED37}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {025B8178-9F9E-492F-B665-F9BBF16833CC}

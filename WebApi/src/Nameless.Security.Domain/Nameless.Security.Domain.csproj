@@ -7,11 +7,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.5" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\Nameless.Core.Domain\Nameless.Core.Domain.csproj" />
+    <ProjectReference Include="..\Nameless.Infra.DbEntities\Nameless.Infra.DbEntities.csproj" />
   </ItemGroup>
 
 </Project>

@@ -16,5 +16,15 @@ namespace Nameless.Infra.DbContext.Contexts
             modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
             base.OnModelCreating(modelBuilder);
         }
+
+        public void EnsureCreated()
+        {
+            Database.EnsureCreated();
+        }
+
+        public DbSet<TEntity> GetDbSet<TEntity>() where TEntity : class
+        {
+            return Set<TEntity>();
+        }
     }
 }

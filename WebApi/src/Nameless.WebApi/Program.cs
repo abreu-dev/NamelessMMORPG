@@ -1,7 +1,8 @@
 using Autofac;
 using Autofac.Extensions.DependencyInjection;
-using Nameless.Infra.DbContext.Contexts;
+using Nameless.Core.Infra.Data.Contexts;
 using Nameless.WebApi.Scope.Extensions;
+using Nameless.WebApi.Scope.Middlewares;
 using Nameless.WebApi.Scope.Modules;
 using Serilog;
 using System.Diagnostics;
@@ -32,7 +33,10 @@ namespace Nameless.WebApi
 
             builder.Host.ConfigureContainer<ContainerBuilder>(container =>
             {
+                container.RegisterModule(new MiddlewareModule());
+                container.RegisterModule(new ConfigurationModule(builder.Configuration));
                 container.RegisterModule(new DatabaseModule(builder.Configuration));
+                container.RegisterModule(new ServiceModule());
             });
 
             var app = builder.Build();
@@ -50,6 +54,8 @@ namespace Nameless.WebApi
 
             app.MapControllers();
 
+            app.UseMiddleware<ExceptionHandlingMiddleware>();
+
             sw.Stop();
 
             app.Logger.LogInformation("WebApi is {Up}! {Time} ms", "up", sw.ElapsedMilliseconds);
@@ -60,13 +66,13 @@ namespace Nameless.WebApi
         private static void LoadDatabase(IComponentContext container,
                                          Microsoft.Extensions.Logging.ILogger logger)
         {
-            var context = container.Resolve<NamelessContext>();
+            var context = container.Resolve<INamelessContext>();
 
             logger.LogInformation("Loading database");
 
             try
             {
-                context.Database.EnsureCreated();
+                context.EnsureCreated();
             }
             catch
             {

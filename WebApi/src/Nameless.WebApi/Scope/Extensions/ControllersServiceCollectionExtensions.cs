@@ -1,4 +1,6 @@
-﻿namespace Nameless.WebApi.Scope.Extensions
+﻿using Nameless.WebApi.Scope.Handlers;
+
+namespace Nameless.WebApi.Scope.Extensions
 {
     public static class ControllersServiceCollectionExtensions
     {
@@ -6,6 +8,7 @@
         {
             services.AddControllers(options =>
             {
+                options.Filters.Add(typeof(AuthenticationTokenFilterAttribute));
             }).AddNewtonsoftJson();
         }
     }

@@ -16,6 +16,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Nameless.Infra.Providers\Nameless.Infra.Providers.csproj" />
+    <ProjectReference Include="..\Nameless.Security.Application\Nameless.Security.Application.csproj" />
+    <ProjectReference Include="..\Nameless.Security.Repository\Nameless.Security.Repository.csproj" />
   </ItemGroup>
 
 </Project>
