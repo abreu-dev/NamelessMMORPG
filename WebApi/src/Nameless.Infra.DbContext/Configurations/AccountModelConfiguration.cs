@@ -38,7 +38,7 @@ namespace Nameless.Infra.DbContext.Configurations
             (
                 new AccountModel
                 {
-                    Id = Guid.NewGuid(),
+                    Id = Guid.Parse("59e4b783-e223-458f-b6b6-19cf8741a8a5"),
                     Email = "god@gmail.com",
                     Username = "god",
                     Password = "god123",
