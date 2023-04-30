@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="8.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="7.0.5" />
+    <PackageReference Include="Serilog.AspNetCore" Version="6.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Nameless.Infra.Providers\Nameless.Infra.Providers.csproj" />
+    <ProjectReference Include="..\Nameless.Infra.Repositories\Nameless.Infra.Repositories.csproj" />
+    <ProjectReference Include="..\Nameless.Networking\Nameless.Networking.csproj" />
+  </ItemGroup>
+
+</Project>
